@@ -1,0 +1,5 @@
+record : 2020-07-02 11:53:28.909034
+args : ()
+kwargs : {}
+resault : hi
+name : foo
