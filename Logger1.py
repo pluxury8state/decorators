@@ -15,13 +15,15 @@ def log_decor(old_function):
             for keys,values in info.items():
                 file.write(f'{keys} : {values}\n')
 
+        return info
+
     return new_function
 
 @log_decor
 def foo():
     return 'hi'
 
-foo()
+print(foo())
 
 
 
