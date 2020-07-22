@@ -12,11 +12,11 @@ def new_logger(file_path):
             info['resault'] = obg
             info['name'] = old_function.__name__
 
-
             with open(file_path, 'w', encoding='utf-8') as file:
                 for keys, values in info.items():
                     file.write(f'{keys} : {values}\n')
 
+            return obg
         return new_function
     return _log_decor
 
@@ -25,4 +25,4 @@ def new_logger(file_path):
 def func():
     return 'hi'
 
-func('arg',kwarg = 8)
+print(func('arg',kwarg = 8))
